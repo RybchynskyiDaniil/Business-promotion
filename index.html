@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
             integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,42 +17,45 @@
 <body>
 <header>
 <div class="container">
-<a href="./index.html"
-><img src="./image/logo-header.svg" alt="logo-header" width="40" height="36">Product</a>
-<nav>
-    <ul>
-        <li><a href="./index.html">Product</a></li>
-        <li><a href="./pricing.html">Pricing</a></li>
-        <li><a href="./customer.html">Customers</a></li>
-        <li><a href="">Resources</a></li>
+    <a href="./index.html"
+    ><img src="./image/logo-header.svg" alt="logo-header" width="40" height="36" class="header-logo">Product</a>
+    <nav class="header-nav">
+        <ul class="header-nav-list">
+            <li><a class="header-nav-link" href="./index.html">Product</a></li>
+            <li><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
+            <li><a class="header-nav-link" href="./customer.html">Customers</a></li>
+            <li><a class="header-nav-link" href="">Resources</a></li>
+        </ul>
+    </nav>
+    <ul class="header-button-list">
+        <li><button class="header-btn" type="button">Sign In</button></li>
+        <li><button class="header-btn" type="button">Sign Up</button></li>
     </ul>
-</nav>
-<ul>
-    <li><button type="button">Sign In</button></li>
-    <li><button type="button">Sign Up</button></li>
-</ul>
 </div>
 </header>
     <main>
         <!-- hero -->
          <section>
-            <div class="container">
-        <h1>Work at the speed  of thought</h1>
-        <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user
-        experience.</p>
-        <ul>
-            <li><button type="button">Get started</button></li>
-            <li><button type="button">Watch the Video</button></li>
+            <div class="container container-hero">
+        <div class="hero-logo-wrapper">
+            <h1 class="hero-logo">Work at the speed  of thought</h1>
+            <p class="hero-text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user
+            experience.</p>
+        
+        <ul class="hero-list">
+            <li><button type="button" class="hero-btn-first">Get started</button></li>
+            <li><button type="button" class="hero-btn-second">Watch the Video</button></li>
         </ul>
-        <img src="./image/hero-img.svg" alt="hero-img" width="610" height="555">
+    </div>
+        <img src="./image/hero-img.svg" alt="hero-img" width="610" height="555" class="hero-image">
         </div>
          </section>
          <!-- end-of-hero -->
+
         <!-- feature -->
         <section>
         <div class="container">
         <h2 class="feature-logo">Product was Built Specifically for You</h2>   
-        <div class="feature-position-items">
         <ul class="feature-list">
         <li class="feature-item">
         <div class="feature-icon green">
@@ -94,31 +97,36 @@
         <p class="feature-item-text">Personal choices and the overall personality of the person.</p>
         </li>
         </ul>
-        </div>
         <button class="button-feature-item" type="button">SIGN UP NOW</button>
         </div>
         </section>
         <!-- end of feature -->
+
          <!-- advantages -->
           <section>
-        <h3 hidden>Advantages hidden</h3>
-        <p>Effortless Validation for</p>
-        <ul>
-            <li>
-                <h2>Management</h2>
-                <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
-                personality of the person.</p>
-            </li>
-            <li>
-                <h4>Accessory makers</h4>
-                <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-            </li>
-            <li>
-                <h4>Alterationists</h4>
-                <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
-            </li>
-        </ul>
-        <img src="./image/management-img.svg" alt="management-img" width="540" height="500" >
+        <div class="container adv-container">
+            <h3 hidden>Advantages hidden</h3>
+            <div class="items-wrapper">
+                <p class="adv-subtitle">Effortless Validation for</p>
+                <ul class="adv-list">
+                    <li class="adv-item">
+                        <h2 class="adv-logo">Management</h2>
+                        <p class="adv-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
+                        personality of the person.</p>
+                    </li>
+                    <li class="adv-item">
+                        <h4 class="adv-logo-second">Accessory makers</h4>
+                        <p class="adv-text text-secondary">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+                    </li>
+                    <li class="adv-item">
+                        <h4 class="adv-logo-secong-after">Alterationists</h4>
+                        <p class="adv-text" >If you are looking for a new way to promote your business that won’t cost you more money,</p>
+                    </li>
+                </ul>
+            </div>
+        <img class="adv-img" src="./image/management-img.svg" alt="management-img" width="540" height="500" >
+    </div>
+        <!-- s -->
 <img src="./image/support-img.svg" alt="support-img">
 <p>Easier decision making for</p>
 <h2>Customer Support</h2>
@@ -149,6 +157,7 @@ standard when it comes to their behavior.</p>
 <img src="./image/collaboration-img.svg" alt="collaboration">
           </section>
           <!-- endadvantages -->
+
            <!-- staff -->
         <section>
         <!-- <div class="container staff-container">
@@ -187,8 +196,8 @@ standard when it comes to their behavior.</p>
             <button class="button-feature-item" type="button">Contact our expert</button>
         <!-- </div> -->
         </section>
-
         <!-- endstaff -->
+
         <!-- section reviews -->
          <section>
         <div class="container">
