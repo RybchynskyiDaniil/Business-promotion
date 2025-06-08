@@ -14,27 +14,31 @@
             <link rel="stylesheet" href="./css/style.css"/>
     <title>Bisiness promotion</title>
 </head>
-<body>
-<header>
-<div class="container">
-    <a href="./index.html"
-    ><img src="./image/logo-header.svg" alt="logo-header" width="40" height="36" class="header-logo">Product</a>
-    <nav class="header-nav">
-        <ul class="header-nav-list">
-            <li><a class="header-nav-link" href="./index.html">Product</a></li>
-            <li><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
-            <li><a class="header-nav-link" href="./customer.html">Customers</a></li>
-            <li><a class="header-nav-link" href="">Resources</a></li>
+<header class="header">
+    <div class="container header-container">
+        <a href="./index.html" class="header-logo">
+            <img src="./image/logo-header.svg" alt="logo" width="40" height="36" />
+            Product
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li><a class="header-nav-link current" href="./index.html">Product</a></li>
+                <li><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
+                <li><a class="header-nav-link" href="./customer.html">Customers</a></li>
+                <li><a class="header-nav-link" href="">Resources</a></li>
+            </ul>
+        </nav>
+
+        <ul class="header-btn-list">
+            <li><button class="header-btn" type="button">Sign In</button></li>
+            <li><button class="header-btn" type="button">Sign Up</button></li>
         </ul>
-    </nav>
-    <ul class="header-button-list">
-        <li><button class="header-btn" type="button">Sign In</button></li>
-        <li><button class="header-btn" type="button">Sign Up</button></li>
-    </ul>
-</div>
+    </div>
 </header>
-    <main>
-        <!-- hero -->
+
+<body>
+  <main>
+        <!----------- hero---------------------------->
          <section>
             <div class="container container-hero">
         <div class="hero-logo-wrapper">
@@ -50,9 +54,9 @@
         <img src="./image/hero-img.svg" alt="hero-img" width="610" height="555" class="hero-image">
         </div>
          </section>
-         <!-- end-of-hero -->
+         <!-------- end-of-hero ---------------------->
 
-        <!-- feature -->
+        <!-----------feature ------------------------->
         <section>
         <div class="container">
         <h2 class="feature-logo">Product was Built Specifically for You</h2>   
@@ -100,9 +104,9 @@
         <button class="button-feature-item" type="button">SIGN UP NOW</button>
         </div>
         </section>
-        <!-- end of feature -->
+        <!---------end of feature -------------------->
 
-         <!-- advantages -->
+         <!--------- advantages ---------------------->
           <section>
         <div class="container adv-container">
             <h3 hidden>Advantages hidden</h3>
@@ -127,78 +131,87 @@
         <img class="adv-img" src="./image/management-img.svg" alt="management-img" width="540" height="500" >
     </div>
         <!-- s -->
-<img src="./image/support-img.svg" alt="support-img">
-<p>Easier decision making for</p>
-<h2>Customer Support</h2>
-<p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
-personality of the person.</p>
-<ul>
-    <li>
-    <img src="./image/icon-advant 1.svg" alt="icon">
-    <p>Never worry about overpaying for your energy again. </p>    
-    </li>
-    <li>
-    <img src="./image/icon-advant 2.svg" alt="icon">
-    <p>We will only switch you to energy companies that we trust and will treat you right</p>    
-    </li>
-    <li>
-    <img src="./image/icon-advant 3.svg" alt="icon">
-    <p>We track the markets daily and know where the savings are.</p>    
-    </li>
-</ul>
-<p>Optimisation for</p>
-<h2>Collaborative</h2>
-<p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a double
-standard when it comes to their behavior.</p>
-<h3>Accessory makers</h3>
-<p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-<h3>Alterationists</h3>
-<p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
-<img src="./image/collaboration-img.svg" alt="collaboration">
-          </section>
-          <!-- endadvantages -->
+        <div class="container secondary-container">
+<img class="secondary-img" src="./image/support-img.svg" alt="support-img">
+    <div class="wraper-advan">
+        <p class="adv-subtitle secondary-subtitle">Easier decision making for</p>
+        <h2 class="adv-logo secondary-logo">Customer Support</h2>
+        <p class="adv-text secondary-adv-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
+        personality of the person.</p>
+        <ul>
+            <li>
+            <div class="wraper-item-second">
+                <img src="./image/icon-advant 1.svg" alt="icon">
+                <p class="adv-text secondary-text-ad">Never worry about overpaying for your energy again. </p>
+            </div>
+            </li>
+            <li>
+                <div class="wraper-item-second">
+            <img src="./image/icon-advant 2.svg" alt="icon">
+            <p class="adv-text secondary-text-ad ">We will only switch you to energy companies that we trust and will treat you right</p>
+        </div>
+            </li>
+            <li>
+                <div class="wraper-item-second">
+            <img src="./image/icon-advant 3.svg" alt="icon">
+            <p class="adv-text secondary-text-ad">We track the markets daily and know where the savings are.</p>
+        </div>
+            </li>
+        </ul>
+    </div>
+</div>
+        <p>Optimisation for</p>
+        <h2>Collaborative</h2>
+        <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a double
+        standard when it comes to their behavior.</p>
+        <h3>Accessory makers</h3>
+        <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+        <h3>Alterationists</h3>
+        <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
+        <img src="./image/collaboration-img.svg" alt="collaboration">
 
-           <!-- staff -->
+          </section>
+          <!-----------endadvantages------------------>
+
+           <!------------------- staff --------------->
         <section>
-        <!-- <div class="container staff-container">
-                <div class="staff-text"> -->
+                    <div class="staff-container">
                 <h2 class="feature-logo">Quick & Easy Process</h2>
                 <p class="staff-paragraph">Do you require some help for your project: Conception workshop,
                 prototyping, marketing strategy, landing page, Ux/UI?</p>
-            <!-- </div> -->
-            <!-- ul>(li>div>img+div>p)*4 -->
-            <ul class="staff-list">
-                <li class="staff-item">
-                        <img class="staff-avatar" src="./image/avatar-1.png" alt="staff-avatar">
-                        <!-- <div class="babble"> -->
-                            <p class="staff-bubble">I can take care of your pitch</p>
-                        <!-- </div> -->
-                </li>
-                <li class="staff-item">
-                        <img class="staff-avatar" src="./image/avatar-4.png" alt="staff-avatar">
-                        <!-- <div class="babble"> -->
-                            <p class="staff-bubble">I can prototype your app</p>
-                        <!-- </div> -->
-                </li>
-                <li class="staff-item">
-                        <img class="staff-avatar" src="./image/avatar-2.png" alt="staff-avatar">
-                        <!-- <div class="babble"> -->
-                            <p class="staff-bubble">I can take care of your pitch</p>
-                        <!-- </div> -->
-                </li>
-                <li class="staff-item">
-                        <img class="staff-avatar" src="./image/avatar-3.png" alt="staff-avatar">
-                        <!-- <div class="babble"> -->
-                            <p class="staff-bubble">I can help marketing strategy</p>
-                        <!-- </div> -->
-                </li>
-            </ul>
+                
+                <ul class="staff-list">
+                    <li class="staff-item">
+                            <img class="staff-avatar" src="./image/avatar-1.png" alt="staff-avatar">
+                            <!-- <div class="babble"> -->
+                                <p class="staff-bubble">I can take care of your pitch</p>
+                            <!-- </div> -->
+                    </li>
+                    <li class="staff-item">
+                            <img class="staff-avatar" src="./image/avatar-4.png" alt="staff-avatar">
+                            <!-- <div class="babble"> -->
+                                <p class="staff-bubble">I can prototype your app</p>
+                            <!-- </div> -->
+                    </li>
+                    <li class="staff-item">
+                            <img class="staff-avatar" src="./image/avatar-2.png" alt="staff-avatar">
+                            <!-- <div class="babble"> -->
+                                <p class="staff-bubble">I can take care of your pitch</p>
+                            <!-- </div> -->
+                    </li>
+                    <li class="staff-item">
+                            <img class="staff-avatar" src="./image/avatar-3.png" alt="staff-avatar">
+                            <!-- <div class="babble"> -->
+                                <p class="staff-bubble">I can help marketing strategy</p>
+                            <!-- </div> -->
+                    </li>
+                </ul>
             <button class="button-feature-item" type="button">Contact our expert</button>
-        <!-- </div> -->
+        </div>
         </section>
-        <!-- endstaff -->
+        <!----------------------- endstaff ----------->
 
-        <!-- section reviews -->
+        <!------------section reviews ---------------->
          <section>
         <div class="container">
         <h2 class="secondary-title">What Clients Say</h2>
@@ -247,5 +260,21 @@ standard when it comes to their behavior.</p>
         </section>
         <!--end of section reviews -->
     </main>
+    <footer>
+   <div class="container">
+       <div class="footer-form">
+        <p class="footer-paragrath">knowing you're always on the best energy deal.</p>
+           <form>
+            <label class="footer-label" for="email-footer-form">
+            <input class="email-input" id="email-footer-form" type="email" name="email" placeholder="Enter your phone number"/>
+            <svg class="icon-footer-form" width="18" height="28" >
+                <use href="./image/sprite.svg#icon-mobile-screen"></use>
+            </svg>
+            </label>
+           </form>
+           <button class=" button-feature-item footer-button-form" type="button">Sign up Now</button>
+       </div>
+   </div>
+</footer>
 </body>
 </html>

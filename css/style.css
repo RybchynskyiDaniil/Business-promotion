@@ -21,43 +21,70 @@ font-family:inherit;
 img{
 display: block;
 }
-/* HEADER */
 .container {
-width: 1150px;
-padding: 0 20px;
-margin: 0 auto;
-
+    width: 1150px;
+    padding: 0 20px;
+    margin: 0 auto; }
+/*------------- HEADER---------- */
+.header-container {
+    display: flex;
+    align-items: center;
 }
-.header-logo{
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 237px;
     font-weight: 700;
     font-size: 30px;
-    line-height: 0.93333;
-    color: #173a56;    
+    line-height: 0.93;
+    color: #173a56;
 }
-.header-nav {}
 
-.header-nav-list {}
+.header-nav {
+    margin-right: auto;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 30px;
+}
 
 .header-nav-link {
-    font-weight: 400;
-        font-size: 16px;
-        line-height: 1.75;
-        color: #22343d
+    padding: 26px 0;
+    display: block;
+    line-height: 1.75;
+    color: #22343d;
 }
 
-.header-button-list {}
+.current {
+    font-weight: 600;
+}
 
-.header-btn {font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    color: #173a56;
+.header-btn-list {
+    display: flex;
+    gap: 21px;
+}
+
+.header-btn {
     border: 1px solid #bcd0e5;
-        border-radius: 4px;
-        max-width: 105px;
-        height: 42px;
-    background-color:transparent;
+    border-radius: 4px;
+    min-width: 105px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #22343d;
+    background-color: transparent;
 }
-/* HERO */
+.header-btn:hover,
+.header-btn:focus {
+    color: #fff;
+    background-color: #02897a;
+    border: none; }
+    /* -------END OF HEADER------ */
+
+/* ---------HERO----------- */
 .container-hero{
 display: flex;
 margin-bottom: 100px;
@@ -117,9 +144,9 @@ color: #fff;
 }
 
 .hero-image {margin-top:35px;}
-/* END OF HERO */
-/* END OF HEADER */
-/* feature */
+/* -----------END OF HERO----------- */
+/* -----------END OF HEADER----------- */
+/* -----------feature----------- */
 .feature-logo{
 font-weight: 700;
     font-size: 33px;
@@ -189,11 +216,12 @@ border-radius: 4px;
         border: none; 
         margin-bottom: 100px;      
 }
- /* end of feature */
- /* ADVANTAGES */
+ /* -----------end of feature----------- */
+ /* -----------ADVANTAGES----------- */
 
  .adv-container{
 display: flex;
+margin-bottom: 100px;
  }
 
 .items-wrapper{
@@ -230,67 +258,43 @@ display: flex;
         color: #22343d;
         margin-bottom: 30px;
  }
+ .secondary-container{
+display: flex;
+ }
+ .secondary-img{
+margin-right: 84px;
+ }
+ .wraper-advan{
+
+ }
+ .secondary-subtitle{
+margin-bottom: 8px;
+width: 215px;;
+ }
+ .secondary-logo{
+ margin-bottom: 25px;   
+ }
  .text-secondary{
 margin-bottom: 25px;
  }
-
- .adv-logo-second {
-    font-weight: 600;
-        font-size: 16px;
-        line-height: 1.625;
-        color: #22343d;
-        margin-bottom:12px;
- }
- .adv-logo-secong-after{
-    font-weight: 600;
-        font-size: 16px;
-        line-height: 1.625;
-        color: #22343d;
-        margin-bottom: 12px;
- }
- .adv-img{
-
- }
-
-/* END OF ADVANTAGES */
-
-
-
-
-
-
-
-
-
-
-
- /* staff-text */
-/* .staff-text{
-
-}
-.staff-text .feature-logo{
-margin-bottom:25px;
-}
-.staff-paragraph{
-max-width:542px;
-margin:0 auto;
-margin-bottom:40px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.625;
-text-align: center;
-color:var(--text-color);
-}
-.staff-list{
+ .wraper-item-second{
 display: flex;
-gap:91px;
-row-gap:25px;
-}
-.staff-item{
-display: flex;
-} */
-/* end staff-text */
- /* section reviews  */
+margin-bottom: 20px;
+min-width: 450px;
+gap: 30px;
+ }
+
+
+ .secondary-adv-text{
+margin-bottom: 30px;
+min-width: 437px;
+ }
+ .secondary-text-ad{
+margin-bottom: 0;
+ }
+ 
+
+/* -----------END OF ADVANTAGES----------- */
 .secondary-title{
 font-weight: 700;
 font-size: 32px;
@@ -349,13 +353,89 @@ font-weight: 500;
     letter-spacing: 0.01em;
     color: #252b42;
 }
-/* end of section reviews */
-.client-profile {}
+/* ------end of section reviews------ */
 
-.clients-avatar {}
+/* -----------STAFF--------- */
+.staff-container {
+max-width:916px;
+padding: 0 20px;
+margin: 0 auto;
+}
 
-.profile-text {}
+.feature-logo {
+    font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        color: #22343d;
+        margin-bottom: 25px;
+}
 
-.subtitle {}
+.staff-paragraph {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        color: #22343d;
+        max-width: 542px;
+        margin: 0 auto;
+}
 
-.clients-text {}
+.staff-list {}
+
+.staff-item {}
+
+.staff-avatar {}
+
+.staff-bubble {}
+
+.button-feature-item {}
+/* ----------- END STAFF--------- */
+
+/* -----------FOOTER---------- */
+.footer-form{
+
+}
+.footer-paragrath{
+margin-bottom: 30px;
+font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #22343d;
+    max-width: 280px;
+}
+.footer-label {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #22343d;
+        min-width: 280px;
+        position: relative;
+}
+
+.email-input {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #02897a;
+        border: 1px solid #bcd0e5;
+            border-radius: 4px;
+            width: 325px;
+            height: 48px;
+            margin-bottom: 25px;
+            padding-left: 40px;
+}
+.email-input::placeholder{
+    color: #02897a;
+}
+.icon-footer-form{
+position: absolute;
+transform: translateY(-50%);
+top:50%;
+left: 12px;
+}
+
+.footer-button-form {
+margin-left: 0;
+}
+
+/* -----------END FOOTER---------- */
